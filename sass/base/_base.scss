@@ -1,0 +1,17 @@
+// Base code goes here
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+
+html {
+    font-size: 63.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
