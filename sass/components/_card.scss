@@ -23,7 +23,6 @@
         }
 
         &--back {
-            background-color: lightblue;
             transform: rotateY(180deg);
 
             &-1 {
@@ -125,100 +124,52 @@
     }
 
     @include respond(tab-port) {
-        
         height: auto;
+        border-radius: 3px;
+        background-color: $color-white;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        &__details {
+            padding: 3rem;
+        }
 
         &__side {
             height: auto;
             position: relative;
-            border-radius: 3px;
+            box-shadow: none;
 
             &--back {
+                text-align: center;
                 transform: rotateY(0);
+                clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+                margin-top: 0rem;
+
+                &-1 {
+                    background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+                }
+    
+                &-2 {
+                    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+                }
+    
+                &-3 {
+                    background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+                }
             }
         }
 
         &:hover &__side--front {
-            transform: rotateY(-180deg);
-        }
-
-        &:hover &__side--back {
-            transform: rotateY(0deg);
+            transform: rotateY(0);
         }
 
         // FRONT SIDE STYLING
-        &__picture {
-            background-size: cover;
-            height: 23rem;
-            width: auto; 
-            background-blend-mode: screen;
-            -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-            border-top-left-radius: 3px;
-            border-top-right-radius: 3px;
-
-            &--1 {
-                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
-                url(../img/financial_inclusion.jpg);
-            }
-
-            &--2 {
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
-                url(../img/self_help_group.jpg);
-            }
-
-            &--3 {
-                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
-                url(../img/fpo_promotion.jpg);
-            }
-        }
-
-        &__heading {
-            font-size: 2.8rem;
-            font-weight: 300;
-            text-transform: uppercase;
-            text-align: right;
-            color: $color-white;
-            position: absolute;
-            top: 12rem;
-            right: 2rem;
-            width: 60%;
-        }
-
-        &__heading-span {
-            padding: 7px 1.5rem;
-            -webkit-box-decoration-break: clone;
-            box-decoration-break: clone;
-
-            &--1 {
-                background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
-            }
-
-            &--2 {
-                background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, .85));
-            }
-
-            &--3 {
-                background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));
-            }
-
-        }
-
-        &__details {
-            padding: 2.3rem;
-
-            &-text {
-                color: #999;
-                font-size: 1.8rem;
-                text-align: justify;
-            }
-        }
-
         &__cta {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(0);
+            width: 100%;
+            padding: 8rem 0;
         }
     }
 }
