@@ -79,4 +79,10 @@ body {
     padding: 0 2rem;
 
     box-shadow: 0 1.5rem 4rem rgba($color-shade-black, .15);
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+        padding: 0 1.4rem;
+        letter-spacing: 1px;
+    }
 }

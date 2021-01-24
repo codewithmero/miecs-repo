@@ -132,6 +132,11 @@ body {
   background: #272727;
   padding: 0 2rem;
   box-shadow: 0 1.5rem 4rem rgba(39, 39, 39, 0.15); }
+  @media (max-width: 56.25em) {
+    .heading-white {
+      font-size: 3rem;
+      padding: 0 1.4rem;
+      letter-spacing: 1px; } }
 
 .u-center-text {
   text-align: center !important; }
@@ -301,13 +306,10 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .3s ease-out; }
-  .feature-box__icon {
-    font-size: 6rem;
-    margin-bottom: 1rem;
-    background-image: linear-gradient(to right, #7ed56f, #28b485);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      padding: 2.2rem;
+      height: 25rem; } }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
@@ -338,12 +340,6 @@ body {
         background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #00c6ff, #0072ff); }
-      .card__side--back-4 {
-        background-image: linear-gradient(to right bottom, #fd746c, #ff9068); }
-      .card__side--back-5 {
-        background-image: linear-gradient(to right bottom, #673AB7, #512DA8); }
-      .card__side--back-6 {
-        background-image: linear-gradient(to right bottom, #76b852, #8DC26F); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -394,6 +390,65 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+  @media (max-width: 56.25em) {
+    .card {
+      height: auto; }
+      .card__side {
+        height: auto;
+        position: relative;
+        border-radius: 3px; }
+        .card__side--back {
+          transform: rotateY(0); }
+      .card:hover .card__side--front {
+        transform: rotateY(-180deg); }
+      .card:hover .card__side--back {
+        transform: rotateY(0deg); }
+      .card__picture {
+        background-size: cover;
+        height: 23rem;
+        width: auto;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px; }
+        .card__picture--1 {
+          background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/financial_inclusion.jpg); }
+        .card__picture--2 {
+          background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/self_help_group.jpg); }
+        .card__picture--3 {
+          background-image: linear-gradient(to right bottom, #00c6ff, #0072ff), url(../img/fpo_promotion.jpg); }
+      .card__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: #fff;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 60%; }
+      .card__heading-span {
+        padding: 7px 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone; }
+        .card__heading-span--1 {
+          background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+        .card__heading-span--2 {
+          background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
+        .card__heading-span--3 {
+          background-image: linear-gradient(to right bottom, rgba(0, 198, 255, 0.85), rgba(0, 114, 255, 0.85)); }
+      .card__details {
+        padding: 2.3rem; }
+        .card__details-text {
+          color: #999;
+          font-size: 1.8rem;
+          text-align: justify; }
+      .card__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); } }
 
 .story {
   width: 75%;
@@ -783,7 +838,7 @@ textarea {
   margin-top: -20vh; }
   @media (max-width: 56.25em) {
     .section-about {
-      paddding: 20rem 0; } }
+      padding: 20rem 0; } }
 
 .section-features {
   padding: 18rem 0 18rem 0;
@@ -795,7 +850,7 @@ textarea {
     transform: skewY(7deg); }
   @media (max-width: 56.25em) {
     .section-features {
-      paddding: 15rem 0; } }
+      padding: 10rem 0; } }
 
 .section-initiatives {
   background-color: #f7f4f4;
@@ -803,21 +858,21 @@ textarea {
   margin-top: -10rem; }
   @media (max-width: 56.25em) {
     .section-initiatives {
-      paddding: 20rem 0 10rem 0; } }
+      padding: 20rem 0 10rem 0; } }
 
 .section-stories {
   position: relative;
   padding: 15rem 0; }
   @media (max-width: 56.25em) {
     .section-stories {
-      paddding: 10rem 0; } }
+      padding: 10rem 0; } }
 
 .section-booking {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
   @media (max-width: 56.25em) {
     .section-booking {
-      paddding: 10rem 0; } }
+      padding: 10rem 0; } }
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/book_img.jpg);
