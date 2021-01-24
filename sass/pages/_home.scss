@@ -4,7 +4,9 @@
     padding: 25rem 0;
     margin-top: -20vh;
 
-    // clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+    @include respond(tab-port) {
+        paddding: 20rem 0;
+    }
 }
 
 // Features section
@@ -19,6 +21,10 @@
     & > * {
         transform: skewY(7deg);
     }
+
+    @include respond(tab-port) {
+        paddding: 15rem 0;
+    }
 }
 
 // Tours section
@@ -27,18 +33,30 @@
     padding: 25rem 0 15rem 0;
     margin-top: -10rem;
 
+    @include respond(tab-port) {
+        paddding: 20rem 0 10rem 0;
+    }
+
 }
 
 // Stories section
 .section-stories {
     position: relative;
     padding: 15rem 0; 
+
+    @include respond(tab-port) {
+        paddding: 10rem 0;
+    }
 }
 
 // Booking section
 .section-booking {
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+
+    @include respond(tab-port) {
+        paddding: 10rem 0;
+    }
 }
 
 .book {
