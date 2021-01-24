@@ -482,6 +482,10 @@ textarea {
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
+  @media (max-width: 37.5em) {
+    .header {
+      height: 80vh;
+      clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%); } }
   .header__logo-box {
     position: absolute;
     top: 2rem;
@@ -492,6 +496,9 @@ textarea {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media (max-width: 37.5em) {
+      .header__text-box {
+        top: 50%; } }
 
 .inner-logo-box {
   width: 10rem;
