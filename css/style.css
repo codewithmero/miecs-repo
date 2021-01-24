@@ -165,7 +165,7 @@ body {
   @media (max-width: 37.5em) {
     .btn, .btn:link, .btn:visited {
       padding: 12px 35px;
-      font-weight: 600;
+      font-weight: 800;
       font-size: 1.4rem; } }
 
 .btn:hover {
