@@ -15,3 +15,10 @@ html {
 body {
     box-sizing: border-box;
 }
+
+.container {
+    height: 100vh;
+    position: relative;
+    // background-image: linear-gradient(to right, rgba($color-primary-light, .8), rgba($color-primary-dark, .8));
+    background: #eee;
+}

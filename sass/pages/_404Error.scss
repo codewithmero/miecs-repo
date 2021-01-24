@@ -1,0 +1,30 @@
+.error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #474747;
+    font-family: 'Montserrat';
+
+    &__heading {
+        font-family: 'Lato', sans-serif;
+        font-size: 2.9rem;
+        font-weight: 600;
+    }
+
+    &__name {
+        font-size: 16rem;
+        font-weight: 900;
+        letter-spacing: 2rem;
+        background: url(../img/clip.jpg) center no-repeat;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+    }
+
+    &__info {
+        font-size: 1.7rem;
+    }
+}
