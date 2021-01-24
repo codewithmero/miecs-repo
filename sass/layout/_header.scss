@@ -10,8 +10,7 @@
     position: relative;  
 
     @include respond(phone) {
-        height: 80vh;
-        clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     }
 
     &__logo-box {
@@ -28,10 +27,14 @@
     
         text-align: center;
 
+        @include respond(tab-port) {
+            top: 45%;
+        }
+        
         @include respond(phone) {
             top: 50%;
         }
-    
+
     }
 }
 
