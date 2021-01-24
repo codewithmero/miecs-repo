@@ -9,26 +9,14 @@ body {
 .heading-primary {
     color: $color-white;
     backface-visibility: hidden;
-    margin-bottom: 3.8rem;
-    font-family: 'Montserrat';
-    font-size: 3.5rem;
-    text-transform: uppercase;
+    margin-bottom: 6rem;
+    // text-transform: uppercase;
 
     &--main {
-        padding: 0 2rem;
         display: block;
-        font-weight: 600;
-
-        letter-spacing: 2px;
-    }
-
-    &--sub {   
-        padding: 0 2rem;
-        display: block;
-        font-weight: 600;
-
-        
-        letter-spacing: 2px;
+        font-weight: 400;
+        font-size: 6rem;
+        animation: moveInLeft 1s ease-out;
     }
 }
 

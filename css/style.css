@@ -54,13 +54,13 @@ html {
   font-size: 62.5%; }
   @media (max-width: 75em) {
     html {
-      font-size: 56.25%; } }
+      font-size: 50%; } }
   @media (max-width: 56.25em) {
     html {
-      font-size: 50%; } }
+      font-size: 35%; } }
   @media (max-width: 37.5em) {
     html {
-      font-size: 50%; } }
+      font-size: 30%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -83,20 +83,12 @@ body {
 .heading-primary {
   color: #fff;
   backface-visibility: hidden;
-  margin-bottom: 3.8rem;
-  font-family: 'Montserrat';
-  font-size: 3.5rem;
-  text-transform: uppercase; }
+  margin-bottom: 6rem; }
   .heading-primary--main {
-    padding: 0 2rem;
     display: block;
-    font-weight: 600;
-    letter-spacing: 2px; }
-  .heading-primary--sub {
-    padding: 0 2rem;
-    display: block;
-    font-weight: 600;
-    letter-spacing: 2px; }
+    font-weight: 400;
+    font-size: 6rem;
+    animation: moveInLeft 1s ease-out; }
 
 .heading-secondary {
   font-size: 3.8rem;
