@@ -51,8 +51,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777;
-  padding: 3rem; }
+  color: #777; }
 
 .heading-primary {
   color: #efefef;
@@ -565,19 +564,20 @@ textarea {
   height: 7rem;
   width: 7rem;
   position: fixed;
-  top: 6rem;
-  right: 6rem;
+  top: 5rem;
+  right: 5rem;
   border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  cursor: pointer; }
 
 .navigation__background {
   height: 6rem;
   width: 6rem;
   border-radius: 50%;
   position: fixed;
-  top: 6.5rem;
-  right: 6.5rem;
+  top: 5.5rem;
+  right: 5.5rem;
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1); }
@@ -635,17 +635,33 @@ textarea {
   transform: translate(-50%, -50%); }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3rem;
-    height: 4px;
+    height: 2.5px;
     background-color: #444;
     display: inline-block; }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
     position: absolute;
-    left: 0; }
+    left: 0;
+    transition: all .2s; }
   .navigation__icon::before {
-    top: -1rem; }
+    top: -.9rem; }
   .navigation__icon::after {
-    top: 1rem; }
+    top: .9rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1.1rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1.1rem; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+    top: 0;
+    transform: rotate(135deg); }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    top: 0;
+    transform: rotate(-135deg); }
 
 .section-about {
   background-color: #f7f4f4;
