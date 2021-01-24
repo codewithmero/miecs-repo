@@ -468,6 +468,18 @@ body {
   .story:hover .story__img {
     transform: scale(1) translate(-3rem);
     filter: blur(3px) brightness(80%); }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 100%;
+      transform: skewX(0);
+      padding-left: 6rem; }
+      .story__shape {
+        width: 12rem;
+        height: 12rem;
+        transform: translateX(-1rem) skewX(0); }
+      .story__text {
+        transform: skewX(0);
+        text-align: justify; } }
 
 .bg-video {
   position: absolute;
@@ -608,7 +620,7 @@ textarea {
         margin-bottom: 6rem; } }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 45rem;
+      max-width: 50em;
       padding: 0 3rem; } }
   .row::after {
     content: "";

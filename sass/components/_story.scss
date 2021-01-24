@@ -59,4 +59,23 @@
         transform: scale(1) translate(-3rem);
         filter: blur(3px) brightness(80%);
     }
+
+    @include respond(tab-port) {
+        width: 100%;
+        transform: skewX(0);
+        padding-left: 6rem;
+
+        &__shape {
+            width: 12rem;
+            height: 12rem;
+
+            transform: translateX(-1rem) skewX(0);
+        }
+
+        &__text {
+            transform: skewX(0);
+            text-align: justify;
+        }
+
+    }
 }
