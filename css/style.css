@@ -1,3 +1,17 @@
+/*
+0 - 600px:              Phone
+600px- 900px:           Tablet (portrait)
+900px - 1200px:         Tablet (landscape)
+[1200px - 1800px] is where our default styles will apply. 
+1800px:                 Big (desktop) 
+
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 /* Animations */
 @keyframes moveInLeft {
   0% {
@@ -37,7 +51,16 @@
   margin: 0; }
 
 html {
-  font-size: 63.5%; }
+  font-size: 62.5%; }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -51,28 +74,16 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777; }
+  color: #777;
+  padding: 3rem; }
 
 .heading-primary {
   color: #efefef;
   backface-visibility: hidden;
   margin-bottom: 3.8rem; }
   .heading-primary--main {
-    display: block;
-    font-size: 3.5rem;
-    font-weight: 800;
-    background: #272727;
-    width: 65rem;
-    text-align: center;
     animation: moveInLeft 1s ease-out; }
   .heading-primary--sub {
-    display: block;
-    font-size: 3.5rem;
-    font-weight: 800;
-    background: #272727;
-    width: 48rem;
-    text-align: center;
-    margin: 1rem auto;
     animation: moveInRight 1s ease-out; }
 
 .heading-secondary {
@@ -561,23 +572,23 @@ textarea {
 
 .navigation__button {
   background-color: #fff;
-  height: 7rem;
-  width: 7rem;
+  height: 6rem;
+  width: 6rem;
   position: fixed;
-  top: 5rem;
-  right: 5rem;
+  top: 6rem;
+  right: 6rem;
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   cursor: pointer; }
 
 .navigation__background {
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
   position: fixed;
-  top: 5.5rem;
-  right: 5.5rem;
+  top: 6.5rem;
+  right: 6.5rem;
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1); }

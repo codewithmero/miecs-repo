@@ -3,7 +3,7 @@ body {
     font-weight: 400;
     line-height: 1.7;
     color: #777;
-    // padding: 3rem;
+    padding: 3rem;
 }
 
 .heading-primary {
@@ -12,23 +12,10 @@ body {
     margin-bottom: 3.8rem;
 
     &--main {
-        display: block;
-        font-size: 3.5rem;
-        font-weight: 800;
-        background: $color-shade-black;
-        width: 65rem;
-        text-align: center;    
         animation: moveInLeft 1s ease-out;
     }
 
-    &--sub {
-        display: block;
-        font-size: 3.5rem;
-        font-weight: 800;
-        background: $color-shade-black;
-        width: 48rem;
-        text-align: center;
-        margin: 1rem auto;    
+    &--sub {   
         animation: moveInRight 1s ease-out;
     }
 }
