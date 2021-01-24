@@ -1,5 +1,6 @@
 .composition {
 
+    margin-top: 3rem;
     position: relative;
     // background: red;
 
@@ -25,7 +26,7 @@
 
             @include respond(tab-port) {
                 top: 0;
-                transform: scale(1.5);
+                transform: scale(1.4);
             }
         }       
 
@@ -35,7 +36,8 @@
 
             @include respond(tab-port) {
                 top: -1rem;
-                transform: scale(1.8);
+                transform: scale(1.5);
+                z-index: 100;
             }
         }
 
@@ -55,10 +57,19 @@
             transform: scale(1.05);
             box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
             z-index: 20;
+
+            @include respond(tab-port) {
+                outline: none; 
+                transform: scale(1.9);
+            }
         }
     }
 
     &:hover &__photo:not(:hover) {
         transform: scale(.95) translateY(-0.5px);
+
+        @include respond(tab-part) {
+            transform: scale(1.6) translateY(0);
+        }
     }
 }

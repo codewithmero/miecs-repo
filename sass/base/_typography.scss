@@ -60,6 +60,7 @@ body {
 
 .paragraph {
     font-size: $default-font-size;
+    text-align: justify;
     
     
     &:not(:last-child) {
