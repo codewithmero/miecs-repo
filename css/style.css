@@ -162,6 +162,11 @@ body {
   font-size: 1.3rem;
   border: none;
   cursor: pointer; }
+  @media (max-width: 37.5em) {
+    .btn, .btn:link, .btn:visited {
+      padding: 12px 35px;
+      font-weight: 600;
+      font-size: 1.4rem; } }
 
 .btn:hover {
   transform: translateY(-3px);

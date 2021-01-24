@@ -17,6 +17,12 @@
         // <button> styles
         border: none;
         cursor: pointer;
+
+        @include respond(phone) {
+            padding: 12px 35px;
+            font-weight: 600;
+            font-size: 1.4rem;
+        }
     }
 
     &:hover {
