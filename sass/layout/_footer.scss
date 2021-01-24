@@ -6,7 +6,7 @@
     font-size: 1.4rem;
 
     @include respond(tab-port) {
-        padding: 8rem 0;
+        padding: 8rem 4rem;
     }
 
     &__navigation {

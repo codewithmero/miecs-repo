@@ -671,7 +671,7 @@ textarea {
   font-size: 1.4rem; }
   @media (max-width: 56.25em) {
     .footer {
-      padding: 8rem 0; } }
+      padding: 8rem 4rem; } }
   .footer__navigation {
     border-top: 1px solid #777;
     padding-top: 2rem;
