@@ -3,6 +3,7 @@
     margin-top: 3rem;
     position: relative;
 
+
     &__photo {
         width: 55%;
         height: auto;
@@ -74,19 +75,18 @@
             box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
             z-index: 20;
 
-            // @include respond(tab-port) {
-            //     outline: none; 
-            //     transform: none;
-            //     box-shadow: none;
-            // }
+            @include respond(tab-port) {
+                outline: none; 
+                transform: scale(1.9);
+            }
         }
     }
 
     &:hover &__photo:not(:hover) {
         transform: scale(.95) translateY(-0.5px);
 
-        // @include respond(tab-port) {
-        //     transform: none;
-        // }
+        @include respond(tab-part) {
+            transform: scale(1.6) translateY(0);
+        }
     }
 }
