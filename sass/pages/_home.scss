@@ -65,7 +65,7 @@
                                       rgba($color-white, .9) 50%, 
                                       transparent 50%), 
                                       url(../img/book_img.jpg);
-    background-size: 100%;
+    background-size: cover;
     // height: 60rem;
     border-radius: 3px;
     box-shadow: 0 1.7rem 4rem rgba($color-black, .2);

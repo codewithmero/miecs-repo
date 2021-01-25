@@ -39,5 +39,9 @@
 }
 
 .btn-full-width {
-    width: 100%;
+    width: 60%;
+
+    @include respond(tab-port) {
+        width: 100%;
+    }
 }

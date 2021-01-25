@@ -169,7 +169,10 @@ body {
   font-size: 1.6rem !important; }
 
 .btn-full-width {
-  width: 100%; }
+  width: 60%; }
+  @media (max-width: 56.25em) {
+    .btn-full-width {
+      width: 100%; } }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -186,7 +189,7 @@ body {
   @media (max-width: 37.5em) {
     .btn, .btn:link, .btn:visited {
       padding: 12px 35px;
-      font-weight: 800;
+      font-weight: 400;
       font-size: 1.4rem; } }
 
 .btn:hover {
@@ -524,9 +527,12 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
   border: none;
   border-bottom: 3px solid transparent;
-  width: 100%;
+  width: 90%;
   display: block;
   transition: all .3s; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -547,8 +553,10 @@ body {
   border-bottom: 3px solid transparent;
   width: 90%;
   display: block;
-  transition: all .3s;
-  width: 100%; }
+  transition: all .3s; }
+  @media (max-width: 56.25em) {
+    .form__textarea {
+      width: 100%; } }
   .form__textarea:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -577,13 +585,18 @@ textarea {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url(../img/splash_4.jpg);
+  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  position: relative; }
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    .header {
+      background-image: linear-gradient(to right, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url(../img/hero.jpg); } }
   @media (max-width: 37.5em) {
     .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header__logo-box {
     position: absolute;
@@ -880,7 +893,7 @@ textarea {
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/book_img.jpg);
-  background-size: 100%;
+  background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.7rem 4rem rgba(0, 0, 0, 0.2); }
   @media (max-width: 75em) {

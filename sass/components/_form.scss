@@ -1,5 +1,7 @@
 .form {
 
+     
+
     &__group:not(:last-child) {
         margin-bottom: 2rem;
     }
@@ -13,9 +15,13 @@
         background-color: rgba($color-white, .9);
         border: none;
         border-bottom: 3px solid transparent;
-        width: 100%;
+        width: 90%;
         display: block;
         transition: all .3s;
+        
+        @include respond(tab-port) {
+            width: 100%;
+        }
 
         &:focus {
             outline: none;
@@ -45,7 +51,10 @@
         width: 90%;
         display: block;
         transition: all .3s;
-        width: 100%;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
 
         &:focus {
             outline: none;
