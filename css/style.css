@@ -318,20 +318,27 @@ body {
     transform: scale(0.95) translateY(-0.5px); }
 
 .feature-box {
-  height: 30rem;
+  height: 40rem;
   background-color: #fff;
   font-size: 1.5rem;
-  padding: 2.8rem;
+  padding: 3rem;
   text-align: justify;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: transform .3s ease-out; }
+  transition: transform .3s ease-out;
+  position: relative; }
   @media (max-width: 56.25em) {
     .feature-box {
-      padding: 2.2rem;
-      height: 25rem; } }
+      padding: 2rem;
+      height: 28rem; } }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
+  .feature-box .bottom {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    border-bottom: none; }
 
 .card {
   perspective: 150rem;
