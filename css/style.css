@@ -168,6 +168,9 @@ body {
 .u-medium-text {
   font-size: 1.6rem !important; }
 
+.btn-full-width {
+  width: 100%; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -521,7 +524,7 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
   border: none;
   border-bottom: 3px solid transparent;
-  width: 90%;
+  width: 100%;
   display: block;
   transition: all .3s; }
   .form__input:focus {
@@ -544,7 +547,8 @@ body {
   border-bottom: 3px solid transparent;
   width: 90%;
   display: block;
-  transition: all .3s; }
+  transition: all .3s;
+  width: 100%; }
   .form__textarea:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
