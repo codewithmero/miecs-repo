@@ -2,7 +2,6 @@
 
     margin-top: 3rem;
     position: relative;
-    // background: red;
 
     &__photo {
         width: 55%;
@@ -77,7 +76,8 @@
 
             @include respond(tab-port) {
                 outline: none; 
-                transform: scale(1.9);
+                transform: none;
+                box-shadow: none;
             }
         }
     }
@@ -85,8 +85,8 @@
     &:hover &__photo:not(:hover) {
         transform: scale(.95) translateY(-0.5px);
 
-        @include respond(tab-part) {
-            transform: scale(1.6) translateY(0);
+        @include respond(tab-port) {
+            transform: none;
         }
     }
 }
