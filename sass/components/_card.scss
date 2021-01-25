@@ -66,7 +66,7 @@
             @media (min-resolution: 192dpi) and (min-width: 37.5em),
                    (min-width: 125em) {
                 background-image:
-                    linear-gradient(to right, rgba($color-secondary-light, 0.7), rgba($color-secondary-dark, 0.7)),
+                    linear-gradient(to right, $color-secondary-light, $color-secondary-dark),
                     url(../img/financial_inclusion.jpg);
             }
         }
@@ -78,7 +78,7 @@
             @media (min-resolution: 192dpi) and (min-width: 37.5em),
                    (min-width: 125em) {
                 background-image:
-                    linear-gradient(to right, rgba($color-primary-light, 0.7), rgba($color-primary-dark, 0.7)),
+                    linear-gradient(to right, $color-primary-light, $color-primary-dark, 0.7),
                     url(../img/self_help_group.jpg);
             }
         }
@@ -90,7 +90,7 @@
             @media (min-resolution: 192dpi) and (min-width: 37.5em),
                    (min-width: 125em) {
                 background-image:
-                    linear-gradient(to right, rgba($color-tertiary-light, 0.7), rgba($color-tertiary-dark, 0.7)),
+                    linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark),
                     url(../img/fpo_promotion.jpg);
             }
         }
