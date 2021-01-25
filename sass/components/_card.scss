@@ -61,17 +61,38 @@
 
         &--1 {
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
-            url(../img/financial_inclusion.jpg);
+            url(../img/financial_inclusion-small.jpg);
+
+            @media (min-resolution: 192dpi) and (min-width: 37.5em),
+                   (min-width: 125em) {
+                background-image:
+                    linear-gradient(to right, rgba($color-primary-light, 0.7), rgba($color-primary-dark, 0.7)),
+                    url(../img/financial_inclusion.jpg);
+            }
         }
 
         &--2 {
             background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
-            url(../img/self_help_group.jpg);
+            url(../img/self_help_group-small.jpg);
+
+            @media (min-resolution: 192dpi) and (min-width: 37.5em),
+                   (min-width: 125em) {
+                background-image:
+                    linear-gradient(to right, rgba($color-primary-light, 0.7), rgba($color-primary-dark, 0.7)),
+                    url(../img/self_help_group.jpg);
+            }
         }
 
         &--3 {
             background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
-            url(../img/fpo_promotion.jpg);
+            url(../img/fpo_promotion-small.jpg);
+
+            @media (min-resolution: 192dpi) and (min-width: 37.5em),
+                   (min-width: 125em) {
+                background-image:
+                    linear-gradient(to right, rgba($color-primary-light, 0.7), rgba($color-primary-dark, 0.7)),
+                    url(../img/fpo_promotion.jpg);
+            }
         }
     }
 
@@ -88,7 +109,7 @@
     }
 
     &__heading-span {
-        padding: 7px 1.5rem;
+        padding: 7px 1.7rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
 
